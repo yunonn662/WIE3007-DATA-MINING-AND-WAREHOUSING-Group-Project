@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" value="Info" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="192" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:ey9wtqOVrFIbe86Vvd8c9wnMIDDbfSTRex/EKbaW" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/Program Files (x86)/studio/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:PppaIDVE3TA9BGan9fIgH0bbmE0HHLCjgPLYqXtI" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_ReK20G2TEe6jMPR-Qx_UHQ" name="DataOperation"/>
+    <routinesParameter id="_Revelm2TEe6jMPR-Qx_UHQ" name="Mathematical"/>
+    <routinesParameter id="_Re5PkG2TEe6jMPR-Qx_UHQ" name="Numeric"/>
+    <routinesParameter id="_Re5Pmm2TEe6jMPR-Qx_UHQ" name="Relational"/>
+    <routinesParameter id="_RfCZgG2TEe6jMPR-Qx_UHQ" name="StringHandling"/>
+    <routinesParameter id="_RfCZim2TEe6jMPR-Qx_UHQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_RfMKgG2TEe6jMPR-Qx_UHQ" name="TalendDate"/>
+    <routinesParameter id="_RfMxoG2TEe6jMPR-Qx_UHQ" name="TalendStringUtil"/>
+    <routinesParameter id="_RfMxlm2TEe6jMPR-Qx_UHQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Freyr/Desktop/Data Mining and Warehousing/Group Project Assignment/Tables (After Star Schema)/new_reservation_fact.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Program Files (x86)/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hotel_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_date_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="marketing_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_date_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_canceled"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lead_time"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="stays_in_weekend_nights"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="stays_in_week_nights"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adults"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="children"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="babies"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="meal"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reserved_room_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="assigned_room_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="booking_changes"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deposit_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="days_in_waiting_list"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adr"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="required_car_parking_spaces"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_of_special_requests"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_waiting_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max_waiting_days"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="common_room_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="common_meal_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_week_nights_stay"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_weekend_nights_stay"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_reservations_by_date"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hotel_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_date_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="marketing_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_date_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_canceled"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lead_time"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="stays_in_weekend_nights"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="stays_in_week_nights"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adults"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="children"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="babies"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="meal"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reserved_room_type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="assigned_room_type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="booking_changes"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deposit_type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="days_in_waiting_list"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adr"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="required_car_parking_spaces"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_of_special_requests"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_waiting_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max_waiting_days"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="common_room_type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="common_meal_type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_week_nights_stay"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_weekend_nights_stay"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_reservations_by_date"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="reservation_fact"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Contains transactional data for reservations made at the hotels. This table captures detailed reservation information, including customer demographics, booking details, stay duration, and special requests."/>
+    <metadata connector="FLOW" name="tFileInputDelimited_3">
+      <column comment="Unique identifier for the reservation." key="true" length="-1" name="reservation_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the hotel where the reservation was made." key="false" length="2" name="hotel_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Unique identifier for the customer making the reservation." key="false" length="7" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the arrival date dimension table." key="false" length="7" name="arrival_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the marketing dimension table." key="false" length="7" name="marketing_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the reservation status date dimension table." key="false" length="8" name="reservation_status_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="Indicates if the reservation was canceled (1) or not (0)." key="false" length="1" name="is_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of days that elapsed between the booking date and the arrival date." key="false" length="-1" name="lead_time" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_weekend_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_week_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of adults mentioned in the reservation." key="false" length="-1" name="adults" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of children mentioned in the reservation." key="false" length="-1" name="children" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of babies mentioned in the reservation." key="false" length="-1" name="babies" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Type of meal booked." key="false" length="-1" name="meal" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Code of room type reserved. Code is presented in an anonymous form." key="false" length="1" name="reserved_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room type." key="false" length="1" name="assigned_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of changes/amendments made to the booking from the moment the booking was entered into the PMS until the moment of check-in or cancellation." key="false" length="-1" name="booking_changes" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Indication of if the customer made a deposit to guarantee the booking. This variable can assume three categories: No Deposit, Non Refund, and Refundable." key="false" length="-1" name="deposit_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of days the booking was in the waiting list before it was confirmed to the customer." key="false" length="-1" name="days_in_waiting_list" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights." key="false" length="-1" name="adr" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of car parking spaces required by the customer." key="false" length="-1" name="required_car_parking_spaces" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of special requests made by the customer." key="false" length="-1" name="total_of_special_requests" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of days guests wait before their reservation is confirmed." key="false" length="-1" name="avg_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Maximum number of days a guest waited for reservation confirmation." key="false" length="-1" name="max_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Most frequently booked room type." key="false" length="1" name="common_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Most common meal option selected with reservations." key="false" length="2" name="common_meal_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Average number of weeknights guests stay." key="false" length="-1" name="avg_week_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of weekend nights guests stay." key="false" length="-1" name="avg_weekend_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Total number of reservations for each reservation date." key="false" length="-1" name="total_reservations_by_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="Unique identifier for the reservation." key="true" length="-1" name="reservation_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the hotel where the reservation was made." key="false" length="2" name="hotel_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Unique identifier for the customer making the reservation." key="false" length="7" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the arrival date dimension table." key="false" length="7" name="arrival_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the marketing dimension table." key="false" length="7" name="marketing_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the reservation status date dimension table." key="false" length="8" name="reservation_status_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="Indicates if the reservation was canceled (1) or not (0)." key="false" length="1" name="is_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of days that elapsed between the booking date and the arrival date." key="false" length="-1" name="lead_time" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_weekend_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_week_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of adults mentioned in the reservation." key="false" length="-1" name="adults" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of children mentioned in the reservation." key="false" length="-1" name="children" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of babies mentioned in the reservation." key="false" length="-1" name="babies" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Type of meal booked." key="false" length="-1" name="meal" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Code of room type reserved. Code is presented in an anonymous form." key="false" length="1" name="reserved_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room type." key="false" length="1" name="assigned_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of changes/amendments made to the booking from the moment the booking was entered into the PMS until the moment of check-in or cancellation." key="false" length="-1" name="booking_changes" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Indication of if the customer made a deposit to guarantee the booking. This variable can assume three categories: No Deposit, Non Refund, and Refundable." key="false" length="-1" name="deposit_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of days the booking was in the waiting list before it was confirmed to the customer." key="false" length="-1" name="days_in_waiting_list" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights." key="false" length="-1" name="adr" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of car parking spaces required by the customer." key="false" length="-1" name="required_car_parking_spaces" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of special requests made by the customer." key="false" length="-1" name="total_of_special_requests" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of days guests wait before their reservation is confirmed." key="false" length="-1" name="avg_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Maximum number of days a guest waited for reservation confirmation." key="false" length="-1" name="max_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Most frequently booked room type." key="false" length="1" name="common_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Most common meal option selected with reservations." key="false" length="2" name="common_meal_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Average number of weeknights guests stay." key="false" length="-1" name="avg_week_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of weekend nights guests stay." key="false" length="-1" name="avg_weekend_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Total number of reservations for each reservation date." key="false" length="-1" name="total_reservations_by_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_1" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Freyr/Desktop/Data Mining and Warehousing/Group Project Assignment/Tables (After Star Schema)/arrival_date_dim.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Program Files (x86)/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_date_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_year"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_month"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_week_number"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_date_day"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_date_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_year"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_month"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_week_number"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_date_day"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="arrival_date_dim"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Contains dimensional data related to arrival dates for the reservation system. This includes a unique identifier for each date, the year, full month name, ISO week number, and day of the month. "/>
+    <metadata connector="FLOW" name="tFileInputDelimited_1">
+      <column comment="Unique identifier for each arrival date, prefixed with 'AD' and followed by a 6-digit sequence number." key="true" length="7" name="arrival_date_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Year of arrival extracted from the arrival date." key="false" length="4" name="arrival_year" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="Month of arrival extracted from the arrival date, as a full month name." key="false" length="9" name="arrival_month" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="ISO week number of the year for the arrival date" key="false" length="2" name="arrival_week_number" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Day of the month for the arrival date, in DD format." key="false" length="2" name="arrival_date_day" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="Unique identifier for each arrival date, prefixed with 'AD' and followed by a 6-digit sequence number." key="true" length="7" name="arrival_date_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Year of arrival extracted from the arrival date." key="false" length="4" name="arrival_year" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="Month of arrival extracted from the arrival date, as a full month name." key="false" length="9" name="arrival_month" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="ISO week number of the year for the arrival date" key="false" length="2" name="arrival_week_number" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Day of the month for the arrival date, in DD format." key="false" length="2" name="arrival_date_day" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_2" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Freyr/Desktop/Data Mining and Warehousing/Group Project Assignment/Tables (After Star Schema)/customer_dim.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Program Files (x86)/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_repeated_guest"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="previous_cancellations"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="previous_bookings_not_canceled"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_type"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_repeated_guest"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="previous_cancellations"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="previous_bookings_not_canceled"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="customer_dim"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Contains customer-related dimensional data for the reservation system. It includes a unique customer ID, type of customer, country of origin, a flag for repeated guests, and metrics on their previous cancellations and bookings that were not canceled."/>
+    <metadata connector="FLOW" name="tFileInputDelimited_2">
+      <column comment="Unique identifier for each customer, prefixed with 'CI' followed by a 5-digit sequence number." key="true" length="7" name="customer_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Category of the customer, describing the type of booking." key="false" length="-1" name="customer_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="ISO 3166-1 alpha-3 country code representing the customer's country of origin." key="false" length="3" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="Flag indicating whether the customer is a repeated guest (1) or not (0)." key="false" length="1" name="is_repeated_guest" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The number of previous booking cancellations made by the customer." key="false" length="-1" name="previous_cancellations" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="The number of previous bookings not canceled by the customer." key="false" length="-1" name="previous_bookings_not_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="Unique identifier for each customer, prefixed with 'CI' followed by a 5-digit sequence number." key="true" length="7" name="customer_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Category of the customer, describing the type of booking." key="false" length="-1" name="customer_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="ISO 3166-1 alpha-3 country code representing the customer's country of origin." key="false" length="3" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="Flag indicating whether the customer is a repeated guest (1) or not (0)." key="false" length="1" name="is_repeated_guest" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The number of previous booking cancellations made by the customer." key="false" length="-1" name="previous_cancellations" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="The number of previous bookings not canceled by the customer." key="false" length="-1" name="previous_bookings_not_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="-128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_4" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Freyr/Desktop/Data Mining and Warehousing/Group Project Assignment/Tables (After Star Schema)/hotel_dim.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Program Files (x86)/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="hotel_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hotel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="hotel_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hotel"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="hotel_dim"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Contains dimensional data for different types of hotels within the reservation system. Each record includes a unique hotel ID and the corresponding hotel type name."/>
+    <metadata connector="FLOW" name="tFileInputDelimited_4">
+      <column comment="Unique identifier for each hotel type, such as 'RH' for Resort Hotel and 'CS' for City Hotel." key="true" length="2" name="hotel_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Name of the hotel type." key="false" length="-1" name="hotel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="Unique identifier for each hotel type, such as 'RH' for Resort Hotel and 'CS' for City Hotel." key="true" length="2" name="hotel_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Name of the hotel type." key="false" length="-1" name="hotel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_5" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Freyr/Desktop/Data Mining and Warehousing/Group Project Assignment/Tables (After Star Schema)/reservation_status_date_dim.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Program Files (x86)/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_date_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_year"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_month"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_weekday"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_day"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_date_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_year"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_month"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_weekday"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_day"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="reservation_status_date_dim"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Contains dimensional data related to the dates when reservation statuses were last updated. It encompasses fields for the year, month, weekday, and day, reflecting the precise timing of status updates. "/>
+    <metadata connector="FLOW" name="tFileInputDelimited_5">
+      <column comment="Unique identifier for the reservation date." key="true" length="8" name="reservation_status_date_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="The year when the reservation status was last updated." key="false" length="4" name="reservation_status_year" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="8" usefulColumn="true"/>
+      <column comment="The month when the reservation status was last updated, represented as an integer." key="false" length="2" name="reservation_status_month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="The day of the week when the reservation status was last updated." key="false" length="1" name="reservation_status_weekday" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The day of the month when the reservation status was last updated." key="false" length="2" name="reservation_status_day" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="Unique identifier for the reservation date." key="true" length="8" name="reservation_status_date_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="The year when the reservation status was last updated." key="false" length="4" name="reservation_status_year" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="8" usefulColumn="true"/>
+      <column comment="The month when the reservation status was last updated, represented as an integer." key="false" length="2" name="reservation_status_month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="The day of the week when the reservation status was last updated." key="false" length="1" name="reservation_status_weekday" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The day of the month when the reservation status was last updated." key="false" length="2" name="reservation_status_day" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_TZPP0KNeEe6YvI5USScIDw-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="Join Tables"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="consolidated_reservation_table">
+      <column comment="Unique identifier for the reservation." key="true" length="-1" name="reservation_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the hotel where the reservation was made." key="false" length="2" name="hotel_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Unique identifier for the customer making the reservation." key="false" length="7" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the arrival date dimension table." key="false" length="7" name="arrival_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the marketing dimension table." key="false" length="7" name="marketing_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the reservation status date dimension table." key="false" length="8" name="reservation_status_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="Indicates if the reservation was canceled (1) or not (0)." key="false" length="1" name="is_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of days that elapsed between the booking date and the arrival date." key="false" length="-1" name="lead_time" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_weekend_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_week_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of adults mentioned in the reservation." key="false" length="-1" name="adults" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of children mentioned in the reservation." key="false" length="-1" name="children" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of babies mentioned in the reservation." key="false" length="-1" name="babies" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Type of meal booked." key="false" length="-1" name="meal" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Code of room type reserved. Code is presented in an anonymous form." key="false" length="1" name="reserved_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room type." key="false" length="1" name="assigned_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of changes/amendments made to the booking from the moment the booking was entered into the PMS until the moment of check-in or cancellation." key="false" length="-1" name="booking_changes" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Indication of if the customer made a deposit to guarantee the booking. This variable can assume three categories: No Deposit, Non Refund, and Refundable." key="false" length="-1" name="deposit_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of days the booking was in the waiting list before it was confirmed to the customer." key="false" length="-1" name="days_in_waiting_list" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights." key="false" length="-1" name="adr" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of car parking spaces required by the customer." key="false" length="-1" name="required_car_parking_spaces" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of special requests made by the customer." key="false" length="-1" name="total_of_special_requests" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of days guests wait before their reservation is confirmed." key="false" length="-1" name="avg_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Maximum number of days a guest waited for reservation confirmation." key="false" length="-1" name="max_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Most frequently booked room type." key="false" length="1" name="common_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Most common meal option selected with reservations." key="false" length="2" name="common_meal_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Average number of weeknights guests stay." key="false" length="-1" name="avg_week_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of weekend nights guests stay." key="false" length="-1" name="avg_weekend_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Total number of reservations for each reservation date." key="false" length="-1" name="total_reservations_by_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Year of arrival extracted from the arrival date." key="false" length="4" name="arrival_year" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="Month of arrival extracted from the arrival date, as a full month name." key="false" length="9" name="arrival_month" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="ISO week number of the year for the arrival date" key="false" length="2" name="arrival_week_number" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Day of the month for the arrival date, in DD format." key="false" length="2" name="arrival_date_day" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Category of the customer, describing the type of booking." key="false" length="-1" name="customer_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="ISO 3166-1 alpha-3 country code representing the customer's country of origin." key="false" length="3" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="Flag indicating whether the customer is a repeated guest (1) or not (0)." key="false" length="1" name="is_repeated_guest" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The number of previous booking cancellations made by the customer." key="false" length="-1" name="previous_cancellations" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="The number of previous bookings not canceled by the customer." key="false" length="-1" name="previous_bookings_not_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Name of the hotel type." key="false" length="-1" name="hotel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="The year when the reservation status was last updated." key="false" length="4" name="reservation_status_year" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="8" usefulColumn="true"/>
+      <column comment="The month when the reservation status was last updated, represented as an integer." key="false" length="2" name="reservation_status_month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="The day of the week when the reservation status was last updated." key="false" length="1" name="reservation_status_weekday" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The day of the month when the reservation status was last updated." key="false" length="2" name="reservation_status_day" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Classification of the market segment from which the booking originated, like 'Direct', 'Corporate', or 'Online TA'." key="false" length="-1" name="market_segment" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Channel through which the booking was made, such as 'Direct', 'Corporate', or 'TA/TO'." key="false" length="-1" name="distribution_channel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the travel agent that made the booking; a value of -1 indicates no agent was involved." key="false" length="-1" name="agent" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the company making the booking; a value of -1 indicates no company was involved." key="false" length="-1" name="company" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="consolidated_reservation_table">
+        <mapperTableEntries name="reservation_id" expression="row4.reservation_id " type="id_String"/>
+        <mapperTableEntries name="hotel_id" expression="row4.hotel_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="customer_id" expression="row4.customer_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="arrival_date_id" expression="row4.arrival_date_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="marketing_id" expression="row4.marketing_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="reservation_status_date_id" expression="row4.reservation_status_date_id " type="id_String" nullable="true"/>
+        <mapperTableEntries name="is_canceled" expression="row4.is_canceled " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="lead_time" expression="row4.lead_time " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="stays_in_weekend_nights" expression="row4.stays_in_weekend_nights " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="stays_in_week_nights" expression="row4.stays_in_week_nights " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="adults" expression="row4.adults " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="children" expression="row4.children " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="babies" expression="row4.babies " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="meal" expression="row4.meal " type="id_String" nullable="true"/>
+        <mapperTableEntries name="reserved_room_type" expression="row4.reserved_room_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="assigned_room_type" expression="row4.assigned_room_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="booking_changes" expression="row4.booking_changes " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="deposit_type" expression="row4.deposit_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="days_in_waiting_list" expression="row4.days_in_waiting_list " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="adr" expression="row4.adr " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="required_car_parking_spaces" expression="row4.required_car_parking_spaces " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="total_of_special_requests" expression="row4.total_of_special_requests " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="avg_waiting_days" expression="row4.avg_waiting_days " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="max_waiting_days" expression="row4.max_waiting_days " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="common_room_type" expression="row4.common_room_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="common_meal_type" expression="row4.common_meal_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="avg_week_nights_stay" expression="row4.avg_week_nights_stay " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="avg_weekend_nights_stay" expression="row4.avg_weekend_nights_stay " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="total_reservations_by_date" expression="row4.total_reservations_by_date " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="arrival_year" expression="row7.arrival_year " type="id_Short"/>
+        <mapperTableEntries name="arrival_month" expression="row7.arrival_month " type="id_String"/>
+        <mapperTableEntries name="arrival_week_number" expression="row7.arrival_week_number " type="id_Short"/>
+        <mapperTableEntries name="arrival_date_day" expression="row7.arrival_date_day " type="id_Short"/>
+        <mapperTableEntries name="customer_type" expression="row6.customer_type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="country" expression="row6.country " type="id_String" nullable="true"/>
+        <mapperTableEntries name="is_repeated_guest" expression="row6.is_repeated_guest " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="previous_cancellations" expression="row6.previous_cancellations " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="previous_bookings_not_canceled" expression="row6.previous_bookings_not_canceled " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="hotel" expression="row9.hotel " type="id_String" nullable="true"/>
+        <mapperTableEntries name="reservation_status_year" expression="row10.reservation_status_year " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="reservation_status_month" expression="row10.reservation_status_month " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="reservation_status_weekday" expression="row10.reservation_status_weekday " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="reservation_status_day" expression="row10.reservation_status_day " type="id_Short" nullable="true"/>
+        <mapperTableEntries name="market_segment" expression="row11.market_segment " type="id_String" nullable="true"/>
+        <mapperTableEntries name="distribution_channel" expression="row11.distribution_channel " type="id_String" nullable="true"/>
+        <mapperTableEntries name="agent" expression="row11.agent " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="company" expression="row11.company " type="id_Integer" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="reservation_id" type="id_String"/>
+        <mapperTableEntries name="hotel_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="customer_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="arrival_date_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="marketing_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="reservation_status_date_id" type="id_String" nullable="true"/>
+        <mapperTableEntries name="is_canceled" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="lead_time" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="stays_in_weekend_nights" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="stays_in_week_nights" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="adults" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="children" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="babies" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="meal" type="id_String" nullable="true"/>
+        <mapperTableEntries name="reserved_room_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="assigned_room_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="booking_changes" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="deposit_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="days_in_waiting_list" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="adr" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="required_car_parking_spaces" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="total_of_special_requests" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="avg_waiting_days" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="max_waiting_days" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="common_room_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="common_meal_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="avg_week_nights_stay" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="avg_weekend_nights_stay" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="total_reservations_by_date" type="id_Short" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row7" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="arrival_date_id" expression="row4.arrival_date_id" type="id_String"/>
+        <mapperTableEntries name="arrival_year" expression="" type="id_Short"/>
+        <mapperTableEntries name="arrival_month" type="id_String"/>
+        <mapperTableEntries name="arrival_week_number" type="id_Short"/>
+        <mapperTableEntries name="arrival_date_day" type="id_Short"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="customer_id" expression="row4.customer_id" type="id_String"/>
+        <mapperTableEntries name="customer_type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="country" type="id_String" nullable="true"/>
+        <mapperTableEntries name="is_repeated_guest" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="previous_cancellations" expression="" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="previous_bookings_not_canceled" type="id_Short" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row9" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="hotel_id" expression="row4.hotel_id " type="id_String" operator="="/>
+        <mapperTableEntries name="hotel" type="id_String" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row10" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="reservation_status_date_id" expression="row4.reservation_status_date_id" type="id_String"/>
+        <mapperTableEntries name="reservation_status_year" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="reservation_status_month" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="reservation_status_weekday" expression="" type="id_Short" nullable="true"/>
+        <mapperTableEntries name="reservation_status_day" type="id_Short" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row11" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="marketing_id" expression="row4.marketing_id" type="id_String"/>
+        <mapperTableEntries name="market_segment" type="id_String" nullable="true"/>
+        <mapperTableEntries name="distribution_channel" type="id_String" nullable="true"/>
+        <mapperTableEntries name="agent" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="company" expression="" type="id_Integer" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tFileInputDelimited" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_6" show="false"/>
+    <elementParameter field="LABEL" name="FILENAMETEXT" value="&quot;When the input source is a stream or a zip file,footer and random shouldn't be bigger than 0.&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Freyr/Desktop/Data Mining and Warehousing/Group Project Assignment/Tables (After Star Schema)/new_marketing_dim.csv&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HEADER" value="1"/>
+    <elementParameter field="TEXT" name="FOOTER" value="0"/>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="REMOVE_EMPTY_ROW" value="false"/>
+    <elementParameter field="CHECK" name="UNCOMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="DIRECTORY" name="TEMP_DIR" value="&quot;D:/Program Files (x86)/studio/workspace&quot;" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="RANDOM" value="false"/>
+    <elementParameter field="TEXT" name="NB_RANDOM" value="10" show="false"/>
+    <elementParameter field="CHECK" name="TRIMALL" value="false"/>
+    <elementParameter field="TABLE" name="TRIMSELECT">
+      <elementValue elementRef="SCHEMA_COLUMN" value="marketing_id"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="market_segment"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="distribution_channel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="company"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="CHECK_FIELDS_NUM" value="false"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SPLITRECORD" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DECODE" value="false"/>
+    <elementParameter field="TABLE" name="DECODE_COLS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="marketing_id"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="market_segment"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="distribution_channel"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent"/>
+      <elementValue elementRef="DECODE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="company"/>
+      <elementValue elementRef="DECODE" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="DESTINATION" value="" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="marketing_dim"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="INFORMATION" value="true"/>
+    <elementParameter field="MEMO" name="COMMENT" value="Contains dimensional data for marketing aspects of the reservation system. It includes a unique marketing ID, market segment, distribution channel, travel agent, and company identifiers."/>
+    <metadata connector="FLOW" name="tFileInputDelimited_6">
+      <column comment="Unique identifier for each marketing entry, prefixed with 'MA' followed by a 5-digit sequence number." key="true" length="7" name="marketing_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Classification of the market segment from which the booking originated, like 'Direct', 'Corporate', or 'Online TA'." key="false" length="-1" name="market_segment" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Channel through which the booking was made, such as 'Direct', 'Corporate', or 'TA/TO'." key="false" length="-1" name="distribution_channel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the travel agent that made the booking; a value of -1 indicates no agent was involved." key="false" length="-1" name="agent" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the company making the booking; a value of -1 indicates no company was involved." key="false" length="-1" name="company" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="Unique identifier for each marketing entry, prefixed with 'MA' followed by a 5-digit sequence number." key="true" length="7" name="marketing_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Classification of the market segment from which the booking originated, like 'Direct', 'Corporate', or 'Online TA'." key="false" length="-1" name="market_segment" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Channel through which the booking was made, such as 'Direct', 'Corporate', or 'TA/TO'." key="false" length="-1" name="distribution_channel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the travel agent that made the booking; a value of -1 indicates no agent was involved." key="false" length="-1" name="agent" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the company making the booking; a value of -1 indicates no company was involved." key="false" length="-1" name="company" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="512" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/Freyr/Desktop/Data Mining and Warehousing/Group Project Assignment/Tables (After Star Schema)/consolidated_table.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="consolidated_table"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="Unique identifier for the reservation." key="true" length="-1" name="reservation_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the hotel where the reservation was made." key="false" length="2" name="hotel_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Unique identifier for the customer making the reservation." key="false" length="7" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the arrival date dimension table." key="false" length="7" name="arrival_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the marketing dimension table." key="false" length="7" name="marketing_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the reservation status date dimension table." key="false" length="8" name="reservation_status_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="Indicates if the reservation was canceled (1) or not (0)." key="false" length="1" name="is_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of days that elapsed between the booking date and the arrival date." key="false" length="-1" name="lead_time" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_weekend_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_week_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of adults mentioned in the reservation." key="false" length="-1" name="adults" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of children mentioned in the reservation." key="false" length="-1" name="children" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of babies mentioned in the reservation." key="false" length="-1" name="babies" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Type of meal booked." key="false" length="-1" name="meal" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Code of room type reserved. Code is presented in an anonymous form." key="false" length="1" name="reserved_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room type." key="false" length="1" name="assigned_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of changes/amendments made to the booking from the moment the booking was entered into the PMS until the moment of check-in or cancellation." key="false" length="-1" name="booking_changes" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Indication of if the customer made a deposit to guarantee the booking. This variable can assume three categories: No Deposit, Non Refund, and Refundable." key="false" length="-1" name="deposit_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of days the booking was in the waiting list before it was confirmed to the customer." key="false" length="-1" name="days_in_waiting_list" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights." key="false" length="-1" name="adr" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of car parking spaces required by the customer." key="false" length="-1" name="required_car_parking_spaces" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of special requests made by the customer." key="false" length="-1" name="total_of_special_requests" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of days guests wait before their reservation is confirmed." key="false" length="-1" name="avg_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Maximum number of days a guest waited for reservation confirmation." key="false" length="-1" name="max_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Most frequently booked room type." key="false" length="1" name="common_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Most common meal option selected with reservations." key="false" length="2" name="common_meal_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Average number of weeknights guests stay." key="false" length="-1" name="avg_week_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of weekend nights guests stay." key="false" length="-1" name="avg_weekend_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Total number of reservations for each reservation date." key="false" length="-1" name="total_reservations_by_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Year of arrival extracted from the arrival date." key="false" length="4" name="arrival_year" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="Month of arrival extracted from the arrival date, as a full month name." key="false" length="9" name="arrival_month" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="ISO week number of the year for the arrival date" key="false" length="2" name="arrival_week_number" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Day of the month for the arrival date, in DD format." key="false" length="2" name="arrival_date_day" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Category of the customer, describing the type of booking." key="false" length="-1" name="customer_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="ISO 3166-1 alpha-3 country code representing the customer's country of origin." key="false" length="3" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="Flag indicating whether the customer is a repeated guest (1) or not (0)." key="false" length="1" name="is_repeated_guest" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The number of previous booking cancellations made by the customer." key="false" length="-1" name="previous_cancellations" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="The number of previous bookings not canceled by the customer." key="false" length="-1" name="previous_bookings_not_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Name of the hotel type." key="false" length="-1" name="hotel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="The year when the reservation status was last updated." key="false" length="4" name="reservation_status_year" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="8" usefulColumn="true"/>
+      <column comment="The month when the reservation status was last updated, represented as an integer." key="false" length="2" name="reservation_status_month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="The day of the week when the reservation status was last updated." key="false" length="1" name="reservation_status_weekday" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The day of the month when the reservation status was last updated." key="false" length="2" name="reservation_status_day" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Classification of the market segment from which the booking originated, like 'Direct', 'Corporate', or 'Online TA'." key="false" length="-1" name="market_segment" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Channel through which the booking was made, such as 'Direct', 'Corporate', or 'TA/TO'." key="false" length="-1" name="distribution_channel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the travel agent that made the booking; a value of -1 indicates no agent was involved." key="false" length="-1" name="agent" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the company making the booking; a value of -1 indicates no company was involved." key="false" length="-1" name="company" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogRow_1" show="false"/>
+    <elementParameter field="RADIO" name="BASIC_MODE" value="true"/>
+    <elementParameter field="RADIO" name="TABLE_PRINT" value="false"/>
+    <elementParameter field="RADIO" name="VERTICAL" value="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE" value="true" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_LABEL" value="false" show="false"/>
+    <elementParameter field="RADIO" name="PRINT_UNIQUE_LABEL" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="PRINT_HEADER" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_UNIQUE_NAME" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_COLNAMES" value="false"/>
+    <elementParameter field="CHECK" name="USE_FIXED_LENGTH" value="false"/>
+    <elementParameter field="TABLE" name="LENGTHS" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hotel_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_date_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="marketing_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_date_id"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_canceled"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="lead_time"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="stays_in_weekend_nights"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="stays_in_week_nights"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adults"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="children"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="babies"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="meal"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reserved_room_type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="assigned_room_type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="booking_changes"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="deposit_type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="days_in_waiting_list"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="adr"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="required_car_parking_spaces"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_of_special_requests"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_waiting_days"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="max_waiting_days"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="common_room_type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="common_meal_type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_week_nights_stay"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="avg_weekend_nights_stay"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="total_reservations_by_date"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_year"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_month"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_week_number"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="arrival_date_day"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="customer_type"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="country"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="is_repeated_guest"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="previous_cancellations"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="previous_bookings_not_canceled"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="hotel"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_year"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_month"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_weekday"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="reservation_status_day"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="market_segment"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="distribution_channel"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="agent"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="company"/>
+      <elementValue elementRef="LENGTH" value="10"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PRINT_CONTENT_WITH_LOG4J" value="true"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogRow_1">
+      <column comment="Unique identifier for the reservation." key="true" length="-1" name="reservation_id" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the hotel where the reservation was made." key="false" length="2" name="hotel_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Unique identifier for the customer making the reservation." key="false" length="7" name="customer_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the arrival date dimension table." key="false" length="7" name="arrival_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the marketing dimension table." key="false" length="7" name="marketing_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="7" usefulColumn="true"/>
+      <column comment="Reference to the reservation status date dimension table." key="false" length="8" name="reservation_status_date_id" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="Indicates if the reservation was canceled (1) or not (0)." key="false" length="1" name="is_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of days that elapsed between the booking date and the arrival date." key="false" length="-1" name="lead_time" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of weekend nights (Saturday or Sunday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_weekend_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of week nights (Monday to Friday) the guest stayed or booked to stay at the hotel." key="false" length="-1" name="stays_in_week_nights" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of adults mentioned in the reservation." key="false" length="-1" name="adults" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of children mentioned in the reservation." key="false" length="-1" name="children" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of babies mentioned in the reservation." key="false" length="-1" name="babies" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Type of meal booked." key="false" length="-1" name="meal" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Code of room type reserved. Code is presented in an anonymous form." key="false" length="1" name="reserved_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Code for the type of room assigned to the booking. Sometimes the assigned room type differs from the reserved room type." key="false" length="1" name="assigned_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of changes/amendments made to the booking from the moment the booking was entered into the PMS until the moment of check-in or cancellation." key="false" length="-1" name="booking_changes" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Indication of if the customer made a deposit to guarantee the booking. This variable can assume three categories: No Deposit, Non Refund, and Refundable." key="false" length="-1" name="deposit_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of days the booking was in the waiting list before it was confirmed to the customer." key="false" length="-1" name="days_in_waiting_list" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average Daily Rate as defined by dividing the sum of all lodging transactions by the total number of staying nights." key="false" length="-1" name="adr" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Number of car parking spaces required by the customer." key="false" length="-1" name="required_car_parking_spaces" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="Number of special requests made by the customer." key="false" length="-1" name="total_of_special_requests" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of days guests wait before their reservation is confirmed." key="false" length="-1" name="avg_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Maximum number of days a guest waited for reservation confirmation." key="false" length="-1" name="max_waiting_days" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Most frequently booked room type." key="false" length="1" name="common_room_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="1" usefulColumn="true"/>
+      <column comment="Most common meal option selected with reservations." key="false" length="2" name="common_meal_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="2" usefulColumn="true"/>
+      <column comment="Average number of weeknights guests stay." key="false" length="-1" name="avg_week_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Average number of weekend nights guests stay." key="false" length="-1" name="avg_weekend_nights_stay" nullable="true" pattern="" precision="-1" sourceType="" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="Total number of reservations for each reservation date." key="false" length="-1" name="total_reservations_by_date" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Year of arrival extracted from the arrival date." key="false" length="4" name="arrival_year" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="Month of arrival extracted from the arrival date, as a full month name." key="false" length="9" name="arrival_month" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="ISO week number of the year for the arrival date" key="false" length="2" name="arrival_week_number" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Day of the month for the arrival date, in DD format." key="false" length="2" name="arrival_date_day" nullable="false" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Category of the customer, describing the type of booking." key="false" length="-1" name="customer_type" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="ISO 3166-1 alpha-3 country code representing the customer's country of origin." key="false" length="3" name="country" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="3" usefulColumn="true"/>
+      <column comment="Flag indicating whether the customer is a repeated guest (1) or not (0)." key="false" length="1" name="is_repeated_guest" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The number of previous booking cancellations made by the customer." key="false" length="-1" name="previous_cancellations" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="The number of previous bookings not canceled by the customer." key="false" length="-1" name="previous_bookings_not_canceled" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="-1" usefulColumn="true"/>
+      <column comment="Name of the hotel type." key="false" length="-1" name="hotel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="The year when the reservation status was last updated." key="false" length="4" name="reservation_status_year" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="8" usefulColumn="true"/>
+      <column comment="The month when the reservation status was last updated, represented as an integer." key="false" length="2" name="reservation_status_month" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="4" usefulColumn="true"/>
+      <column comment="The day of the week when the reservation status was last updated." key="false" length="1" name="reservation_status_weekday" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="1" usefulColumn="true"/>
+      <column comment="The day of the month when the reservation status was last updated." key="false" length="2" name="reservation_status_day" nullable="true" pattern="" precision="-1" sourceType="" type="id_Short" originalLength="2" usefulColumn="true"/>
+      <column comment="Classification of the market segment from which the booking originated, like 'Direct', 'Corporate', or 'Online TA'." key="false" length="-1" name="market_segment" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Channel through which the booking was made, such as 'Direct', 'Corporate', or 'TA/TO'." key="false" length="-1" name="distribution_channel" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the travel agent that made the booking; a value of -1 indicates no agent was involved." key="false" length="-1" name="agent" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="Identifier for the company making the booking; a value of -1 indicates no company was involved." key="false" length="-1" name="company" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputDelimited_3" offsetLabelX="44" offsetLabelY="35" source="tFileInputDelimited_3" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="8" metaname="tFileInputDelimited_1" offsetLabelX="-50" offsetLabelY="-50" source="tFileInputDelimited_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tFileInputDelimited_2" offsetLabelX="-50" offsetLabelY="7" source="tFileInputDelimited_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row9" lineStyle="8" metaname="tFileInputDelimited_4" offsetLabelX="-50" offsetLabelY="-46" source="tFileInputDelimited_4" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row9" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row10" lineStyle="8" metaname="tFileInputDelimited_5" offsetLabelX="46" offsetLabelY="14" source="tFileInputDelimited_5" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row10" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="consolidated_reservation_table" lineStyle="0" metaname="consolidated_reservation_table" offsetLabelX="50" offsetLabelY="-46" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="reservation_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="arrival_date_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="hotel_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="marketing_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="customer_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="reservation_status_date_id"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="consolidated_reservation_table" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row11" lineStyle="8" metaname="tFileInputDelimited_6" offsetLabelX="50" offsetLabelY="2" source="tFileInputDelimited_6" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row11" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row12" lineStyle="0" metaname="tFileOutputDelimited_1" offsetLabelX="7" offsetLabelY="16" source="tFileOutputDelimited_1" target="tLogRow_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row12" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputDelimited_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

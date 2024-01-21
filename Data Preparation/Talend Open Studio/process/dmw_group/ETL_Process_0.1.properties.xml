@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendProperties="http://www.talend.org/properties">
+  <TalendProperties:Property xmi:id="_KzKN0KM9Ee6YvI5USScIDw" id="_KzF8YKM9Ee6YvI5USScIDw" label="ETL_Process" purpose="Data Integration and Preprocessing for Analytics" description="The job is designed to integrate multiple data sources for a hotel reservation system. &#xD;&#xA;&#xD;&#xA;It involves reading data from several CSV files, in which each representing different dimensions of the reservation system.&#xD;&#xA;&#xD;&#xA;It then continues with extraction of a date dimension from the reservation fact table, followed by a merging process where all dimension tables are joined with the reservation fact table using their respective IDs.&#xD;&#xA;&#xD;&#xA;The outcome is a consolidated CSV file that contains all information for further analysis in SAS Enterprise Miner after saving the file locally." version="0.1" statusCode="" item="_KzKN0qM9Ee6YvI5USScIDw" displayName="ETL_Process">
+    <author href="../../talend.project#_QvLC0G2TEe6jMPR-Qx_UHQ"/>
+    <additionalProperties xmi:id="_KzOfQKM9Ee6YvI5USScIDw" key="created_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_KzOfQaM9Ee6YvI5USScIDw" key="created_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_KzPGUKM9Ee6YvI5USScIDw" key="created_date" value="2023-12-25T23:19:20.820+0800"/>
+    <additionalProperties xmi:id="_KzPGUaM9Ee6YvI5USScIDw" key="modified_product_fullname" value="Talend Open Studio for Data Integration"/>
+    <additionalProperties xmi:id="_KzPGUqM9Ee6YvI5USScIDw" key="modified_product_version" value="8.0.1.20211109_1610"/>
+    <additionalProperties xmi:id="_KzPGU6M9Ee6YvI5USScIDw" key="modified_date" value="2024-01-17T15:05:56.325+0800"/>
+  </TalendProperties:Property>
+  <TalendProperties:ItemState xmi:id="_KzKN0aM9Ee6YvI5USScIDw" path="dmw_group"/>
+  <TalendProperties:ProcessItem xmi:id="_KzKN0qM9Ee6YvI5USScIDw" property="_KzKN0KM9Ee6YvI5USScIDw" state="_KzKN0aM9Ee6YvI5USScIDw">
+    <process href="ETL_Process_0.1.item#/"/>
+  </TalendProperties:ProcessItem>
+</xmi:XMI>
